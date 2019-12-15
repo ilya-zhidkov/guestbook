@@ -2,6 +2,7 @@
 
 require_once 'Action.php';
 require_once 'File.php';
+require_once 'ReadAction.php';
 require_once 'User.php';
 require_once 'WriteAction.php';
 
@@ -30,6 +31,9 @@ class GuestBook
         switch ($input) {
             case '1':
                 $this->addAction(new WriteAction($this->file), 'write');            
+                break;
+            case '2':
+                $this->addAction(new ReadAction($this->file), 'read');
                 break;
             default:
                 exit("\nQuitting application...\n");
