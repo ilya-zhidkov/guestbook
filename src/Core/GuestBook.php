@@ -2,7 +2,7 @@
 
 namespace GuestBook\Core;
 
-use GuestBook\Core\Actions\{Action, ReadAction, LeaveAction, WriteAction};
+use GuestBook\Core\Actions\{Action, ActionType, ReadAction, LeaveAction, WriteAction};
 use GuestBook\Core\Models\{File, User};
 
 class GuestBook
@@ -28,10 +28,10 @@ class GuestBook
         $input = readline("\nYour choice: ");
 
         switch ($input) {
-            case '1':
+            case ActionType::WRITE:
                 $this->addAction(new WriteAction($this->file), 'write');            
                 break;
-            case '2':
+            case ActionType::READ:
                 $this->addAction(new ReadAction($this->file), 'read');
                 break;
             default:
