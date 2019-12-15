@@ -2,6 +2,7 @@
 
 require_once 'Action.php';
 require_once 'File.php';
+require_once 'LeaveAction.php';
 require_once 'ReadAction.php';
 require_once 'User.php';
 require_once 'WriteAction.php';
@@ -36,7 +37,8 @@ class GuestBook
                 $this->addAction(new ReadAction($this->file), 'read');
                 break;
             default:
-                exit("\nQuitting application...\n");
+                $this->addAction(new LeaveAction(), 'leave');
+                break;
         }
 
         foreach ($this->actions as $action)
