@@ -8,21 +8,17 @@ class Message implements Writeable
 {
     private $username;
     private $contents;
-    private $created_at;
+    private $createdAt;
 
     public function __construct(string $username, string $contents)
     {
         $this->username = $username;
         $this->contents = $contents;
-        $this->created_at = date('d. m. Y H:i:s');
+        $this->createdAt = (new \DateTime())->getTimestamp();
     }
 
     public function toString() : string
     {
-        $output = "Author: {$this->username}" . PHP_EOL;
-        $output .= "Contents: {$this->contents}" . PHP_EOL;
-        $output .= "Created at: {$this->created_at}" . PHP_EOL;
-        $output .= "------------------------" . PHP_EOL;
-        return $output;
+        return "{$this->username}-{$this->contents}-{$this->createdAt}";
     }
 }

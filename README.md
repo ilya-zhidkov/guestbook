@@ -31,7 +31,7 @@ A simple user logging application.
 #### Nice to have features
 
   - [x] PSR - 4 auto-loading
-  - [ ] Ordering data 
+  - [x] Sorting data 
 
 ---
 
