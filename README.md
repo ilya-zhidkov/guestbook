@@ -2,6 +2,8 @@
 
 A simple user logging application.
 
+![GuestBook](./assets/images/guestbook-demo.png)
+
 ---
 
 ## Setup
