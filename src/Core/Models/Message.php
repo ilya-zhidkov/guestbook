@@ -1,6 +1,8 @@
 <?php
 
-require_once 'Writeable.php';
+namespace GuestBook\Core\Models;
+
+use GuestBook\Core\Writeable;
 
 class Message implements Writeable
 {

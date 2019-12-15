@@ -1,7 +1,10 @@
 <?php
 
-require_once 'FileReader.php';
-require_once 'FileWriter.php';
+namespace GuestBook\Core\Models;
+
+use GuestBook\Core;
+use GuestBook\Core\{FileReader, FileWriter};
+
 
 class File implements FileReader, FileWriter
 {

@@ -6,10 +6,17 @@ A simple user logging application.
 
 ## Setup
 
-*Assuming you have PHP (7+) installed system-wide.*
+*Assuming you have PHP (7+) and Composer installed system-wide.*
 
 1. Clone or download repository.
-2. Run `php index.php`.
+2. Install necessary dependencies
+    ```bash
+    composer install
+    ```
+3. Run application 
+    ```bash
+    php index.php
+    ```
 
 ---
 
@@ -23,7 +30,7 @@ A simple user logging application.
 
 #### Nice to have features
 
-  - [ ] PSR - 4 auto-loading
+  - [x] PSR - 4 auto-loading
   - [ ] Ordering data 
 
 ---

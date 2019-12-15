@@ -1,5 +1,7 @@
 <?php
 
+namespace GuestBook\Core\Models;
+
 class User
 {
     private $username;

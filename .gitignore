@@ -1,2 +1,5 @@
 # Log files
 log.txt
+
+# Dependencies
+vendor/

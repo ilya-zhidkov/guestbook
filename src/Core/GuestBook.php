@@ -1,11 +1,9 @@
 <?php
 
-require_once 'Action.php';
-require_once 'File.php';
-require_once 'LeaveAction.php';
-require_once 'ReadAction.php';
-require_once 'User.php';
-require_once 'WriteAction.php';
+namespace GuestBook\Core;
+
+use GuestBook\Core\Actions\{Action, ReadAction, LeaveAction, WriteAction};
+use GuestBook\Core\Models\{File, User};
 
 class GuestBook
 {

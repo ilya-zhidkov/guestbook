@@ -1,7 +1,8 @@
 <?php
 
-require_once 'Action.php';
-require_once 'User.php';
+namespace GuestBook\Core\Actions;
+
+use GuestBook\Core\Models\User;
 
 class LeaveAction implements Action
 {

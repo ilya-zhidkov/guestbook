@@ -1,6 +1,8 @@
 <?php
 
-require_once 'User.php';
+namespace GuestBook\Core\Actions;
+
+use GuestBook\Core\Models\User;
 
 interface Action
 {

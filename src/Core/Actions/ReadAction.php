@@ -1,8 +1,8 @@
 <?php
 
-require_once 'Action.php';
-require_once 'File.php';
-require_once 'User.php';
+namespace GuestBook\Core\Actions;
+
+use GuestBook\Core\Models\{File, User};
 
 class ReadAction implements Action
 {

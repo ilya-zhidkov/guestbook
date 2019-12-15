@@ -1,9 +1,8 @@
 <?php
 
-require_once 'Action.php';
-require_once 'File.php';
-require_once 'Message.php';
-require_once 'User.php';
+namespace GuestBook\Core\Actions;
+
+use GuestBook\Core\Models\{Message, File, User};
 
 class WriteAction implements Action
 {
