@@ -8,12 +8,20 @@ A simple user logging application.
 
 *Assuming you have PHP (7+) and Composer installed system-wide.*
 
-1. Clone or download repository.
+1. Clone or download repository
+  
+    ```bash
+    git clone https://github.com/ilya-zhidkov/guestbook.git
+    ```
+
 2. Install necessary dependencies
+
     ```bash
     composer install
     ```
-3. Run application 
+
+3. Run application
+   
     ```bash
     php index.php
     ```
